@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+$primary_color: #007bff;
+
+@mixin btn_small {
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 10px 15px;
+    margin: 20px;
+}
+
+.btn_primary {
+    @include btn_small;
+    border-color: $primary_color;
+    background-color: $primary_color;
+}
+
+.btn_hover:hover {
+    opacity: 90%;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn_border_radius {
+    border-radius: 5px;
+}
+
+.rainbow {
+    background-color: #fff;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    padding: 10px 5px;
+    border: 1px solid gray;
+}
+
+.rainbow-1:hover {
+    border: none;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation: slidebg 2s linear infinite;
+}
+
+.animated_btn {
+    display: inline-block;
+    // width: 20px;
+    padding: 5px 20px;
+    background-color: #fff;
+    margin: 0;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}

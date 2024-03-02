@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary button</title>
+    <link rel="stylesheet" href="primary.css" />
+    <!-- <style>
+        .btnn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btnn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .btnn:hover::before {
+            width: 0;
+            height: 0;
+        }
+
+        .btnn span {
+            position: relative;
+            z-index: 1;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- round corner -->
+    <button type="button" class="btn_primary btn_border_radius">Primary</button>
+
+    <!-- change on mouse over -->
+    <button type="button" class="btn_primary btn_border_radius btn_hover">Primary</button>
+
+    <!-- disabled -->
+    <button type="button" class="btn_primary btn_border_radius" disabled="disabled">Primary</button>
+
+    <!-- background image -->
+    <button type="button" class="btn_primary btn_border_radius"><img src="../../assets/images/btn.png" alt=""
+            width="80px" /></button>
+
+    <!-- animation -->
+    <a class="rainbow rainbow-1"><span class="animated_btn">Click Me!</span></a>
+
+    <!-- <button class="btnn"><span>Click Me</span></button> -->
+</body>
+
+</html>
