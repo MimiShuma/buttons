@@ -5,11 +5,25 @@ $primary_color: #007bff;
     border: 1px solid transparent;
     background-color: transparent;
     padding: 10px 15px;
-    margin: 20px;
+    margin: 10px;
 }
 
-.btn_primary {
+@mixin btn_lg {
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 20px 30px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.btn_primary_sm {
     @include btn_small;
+    border-color: $primary_color;
+    background-color: $primary_color;
+}
+
+.btn_primary_lg {
+    @include btn_lg;
     border-color: $primary_color;
     background-color: $primary_color;
 }
@@ -24,13 +38,23 @@ $primary_color: #007bff;
     border-radius: 5px;
 }
 
-.rainbow {
+@mixin rainbow_btn {
     background-color: #fff;
     border-radius: 4px;
     color: black;
     cursor: pointer;
-    padding: 10px 5px;
     border: 1px solid gray;
+    margin: 10px;
+}
+
+.rainbow_sm {
+    @include rainbow_btn;
+    padding: 10px 5px;
+}
+
+.rainbow_lg {
+    @include rainbow_btn;
+    padding: 20px 6px;
 }
 
 .rainbow-1:hover {
@@ -39,12 +63,20 @@ $primary_color: #007bff;
     animation: slidebg 2s linear infinite;
 }
 
-.animated_btn {
+@mixin animated_btn {
     display: inline-block;
-    // width: 20px;
-    padding: 5px 20px;
     background-color: #fff;
     margin: 0;
+}
+
+.animated_btn_sm {
+    @include animated_btn;
+    padding: 5px 20px;
+}
+
+.animated_btn_lg {
+    @include animated_btn;
+    padding: 15px 30px;
 }
 
 @keyframes slidebg {
